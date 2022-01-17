@@ -1,0 +1,14 @@
+---
+name: trigger-lambda-pr
+on:
+  push:
+    branches:
+    - main
+jobs:
+  trigger-lambda:
+    name: Trigger Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - name: First Step
+        run: |
+          echo "Hi there"
