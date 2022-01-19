@@ -1,0 +1,6 @@
+name: str(),
+description: str(),
+struct:
+  value1:
+    value3: num()
+  value2: num()
