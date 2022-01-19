@@ -11,6 +11,6 @@ jobs:
     - name: Validate YAML
       uses: brittonhayes/validate-yaml@main
       with:
-        schemaPath: "schema.json"
+        schemaPath: "schema/schema.json"
         files: |
           src/template.yml
