@@ -2,7 +2,9 @@
     "name": "string",
     "description": "string",
     "struct": {
-        "value1": "number",
+        "value1": {
+            "value3": "number"
+        },
         "value2": "number"
     }
 }
