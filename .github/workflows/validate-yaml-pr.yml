@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Validate YAML
-      uses: brittonhayes/validate-yaml
+      uses: brittonhayes/validate-yaml@main
       with:
         schemaPath: "schema.json"
         files: |
