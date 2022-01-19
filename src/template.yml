@@ -2,5 +2,5 @@
 name: Sample template
 description: This is a sample template
 struct:
-  value1: 123
+  value1: bar baz
   value2: foobar
