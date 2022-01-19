@@ -8,9 +8,11 @@ jobs:
     name: Validate YAML
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout
+      uses: actions/checkout@master
     - name: Validate YAML
       uses: brittonhayes/validate-yaml@main
       with:
-        schemaPath: 'schema.json'
+        schemaPath: 'schema/schema.json'
         files: |
           src/template.yml
