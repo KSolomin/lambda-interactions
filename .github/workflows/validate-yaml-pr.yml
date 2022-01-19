@@ -16,3 +16,4 @@ jobs:
         schemaPath: 'schema/schema.json'
         files: |
           src/template.yml
+          src/template.yaml
