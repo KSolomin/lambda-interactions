@@ -3,6 +3,6 @@
     "description": "string",
     "struct": {
         "value1": "number",
-        "value2": "string"
+        "value2": "number"
     }
 }

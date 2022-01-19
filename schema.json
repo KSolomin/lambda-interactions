@@ -1,8 +1,0 @@
-{
-    "name": "string",
-    "description": "string",
-    "struct": {
-        "value1": "number",
-        "value2": "string"
-    }
-}
