@@ -1,0 +1,16 @@
+name: validate-yaml-pr
+on:
+  pull_request:
+    branches:
+    - main
+jobs:
+  validate-yaml:
+    name: Validate YAML
+    runs-on: ubuntu-latest
+    steps:
+    - name: Validate YAML
+      uses: brittonhayes/validate-yaml
+      with:
+        schemaPath: "schema.json"
+        files: |
+          src/template.yml
