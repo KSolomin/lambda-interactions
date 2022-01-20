@@ -1,0 +1,17 @@
+name: validate-yaml-pr
+on:
+  pull_request:
+    branches:
+    - main
+jobs:
+  validate-yaml:
+    name: Validate YAML
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Validate YAML
+      uses: nrkno/yaml-schema-validator-github-action@master
+      with:
+        schema: 'schema/schema.yml'
+        target: 'src/template.yml'

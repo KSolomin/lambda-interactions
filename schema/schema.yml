@@ -1,0 +1,5 @@
+name: str()
+description: str()
+struct:
+  value1: num()
+  value2: str()
