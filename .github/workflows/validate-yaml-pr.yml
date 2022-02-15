@@ -10,8 +10,14 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+
     - name: Validate YAML
       uses: nrkno/yaml-schema-validator-github-action@master
       with:
         schema: 'schema/schema.yml'
         target: 'src/template.yml'
+
+    - name: Label PR
+      uses: actions-ecosystem/action-add-labels@v1
+      with:
+          labels: automerge
