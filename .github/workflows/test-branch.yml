@@ -1,0 +1,20 @@
+name: test-branch
+on:
+  push:
+    branches:
+      - feature/**
+
+  jobs:
+    myjob:
+    runs-on: ubuntu-latest
+    steps:
+    - name: first-step
+      run: |
+        echo "First step"
+        echo "env_var=true" >> $GITHUB_ENV
+
+    - name: second-step
+      if: |
+        ${{ env.env_var }} == "true"
+      run: |
+        echo "Second step"
