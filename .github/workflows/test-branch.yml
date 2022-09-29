@@ -15,6 +15,6 @@ jobs:
 
     - name: second-step
       if: |
-        ${{ env.env_var }} == "true"
+        ${{ env.env_var }}
       run: |
         echo "Second step"
