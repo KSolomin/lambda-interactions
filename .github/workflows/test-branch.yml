@@ -11,7 +11,7 @@ jobs:
     - name: first-step
       run: |
         echo "First step"
-      echo "env_var=comment" >> $GITHUB_ENV
+        echo "env_var=comment" >> $GITHUB_ENV
 
     - name: second-step
       if: |
